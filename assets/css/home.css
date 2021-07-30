@@ -162,12 +162,14 @@
 }
 
 .application__form input {
-    border: 3px solid #444;
+    border: 3px solid #eee;
+    outline-color: var(--light-blue);
     padding: 25px 40px;
     font-size: 24px;
     color: black;
     border-radius: 5px;
 }
+
 
 input.application__submit {
     grid-column: 1/-1;
