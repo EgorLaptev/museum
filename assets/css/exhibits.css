@@ -1,0 +1,81 @@
+/* Exhibits */
+.exhibits {
+    padding: 300px 0;
+}
+
+.exhibits .exhibits__title {
+    margin-bottom: 200px;
+}
+
+.exhibits__grid {
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 95px;
+    justify-content: center;
+    align-items: center;
+}
+
+.exhibit {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 24px;
+    transition: .3s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.exhibit:hover {
+    transform: scale(1.02);
+}
+
+.exhibit__link {
+    position: absolute;
+    inset: 0;
+}
+
+.exhibit__image {
+    width: 100%;
+    height: auto;
+}
+
+.exhibit__name {
+    padding-left: 15px;
+    line-height: 1.5em;
+    float: left;
+}
+
+.exhibit__date {
+    padding-right: 15px;
+    line-height: 1.5em;
+    float: right;
+}
+
+/* filter */
+.exhibits__filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 45px;
+    height: 65px;
+}
+
+.filter__item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.filter__button {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 20px 15px;
+}
+
+/* pagination */
+.exhibits__pagination {
+    align-self: start;
+    justify-self: start;
+}
